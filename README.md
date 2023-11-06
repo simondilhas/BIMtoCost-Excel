@@ -92,10 +92,10 @@ In the book Sheets you can add more information for the Spaces, Interior Walls, 
 1. abstract the new model
 2. Check the resul in a BIM Viewer. We recommend BIMcollab ZOOM because of the colored visualizations.
 3. Copy the data from the Sheet abstractBIM. 
-- (Ctrl A) marks everyhing
-- (Ctrl C) copies everything
+	- (Ctrl A) marks everything
+	- (Ctrl C) copies everything
 4. Insert the copied data into the existing Calculation. 
-- (Ctrl A) marks everyhing
-- (Delete) deletes all the data
-- Click in column A1 and insert the data with (Ctrl V) 
+	- (Ctrl A) marks everything
+	- (Delete) deletes all the data
+	- Click in column A1 and insert the data with (Ctrl V) 
 5. Check in the Sheet Help Unique if anything changed. Update accordingly.
