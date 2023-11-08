@@ -2,7 +2,7 @@
 
 ## Introcuction
 
-Automated cost calculations based on Building Information Modeling (BIM) are highly complex due to the variety in modeling styles. The quality of model data depends on the architectural company's standards, each individual modeller's style, and even their daily mood.
+Automated cost calculations based on Building Information Modeling (BIM) are highly complex due to the variety in modeling styles. The model data quality depends on the architectural company's standards, each individual modeller's style, and even their daily mood.
 
 In this project, we explore the possibilities once the issue of data variety is resolved. We utilize the abstractBIM, an automatically normalized architectural BIM, to develop a prototype for building cost calculations.
 
@@ -61,13 +61,11 @@ The abstractBIM tool automatically transforms any architectural BIM IFC file wit
 - Cost Calculation: Integrates quantities, qualities, and unit prices for cost estimation.
 - Roombook: Aids in specifying room-specific qualities such as flooring.
 - Wallbook: Facilitates the specification of wall-related qualities based on wall relationships between two rooms.
-- Help Unique: Generates unique values for use in the Room, Wall, and Facade book.
 - Element Books: Offer detailed specifications for various elements.
 - List: Contains supplementary pick lists.
 
 ### General Workflow
 - Proceed through the sheets from left to right.
-- Column A provides additional guidance and explanations. These are market with a "H" and a red corner.
 - Feel free to modify values in the yellow fields with confidence!
 
 ### Sheet "Cost Calculation"
@@ -79,13 +77,9 @@ The Cost Calculation sheet is the central workspace, linking all other sheets.
 - Columns G to K permit you to input or override quantities from the abstractBIM.
 - Columns M to O display the actual calculations.
 
-### Sheet "Help Unique"
-This Sheets help you to ensure data consistency while updating.
-Due to some Excel restrictions you might have to doubleclick on the column A2, B2 and C2 to activate the Unique formula.
+### Sheet "Roombook", "Wallbook", "Facadebook", "Windowbook" and "Doorbook"
 
-### Sheet "Roombook", "Wallbook" and "Facadebook"
-
-In the book Sheets you can add more information for the Spaces, Interior Walls, ExteriorCoverings. The principle is always the same. Copy the unique and insert the values (not the formulars)  of the Type names  into column B of the Book Sheet. Based on this information the sheet calculates basic quantities and you can add more information in the later columns.
+In the book Sheets you can add more information for the Spaces, Interior Walls, ExteriorCoverings. The principle is always the same. Copy the unique and insert the values (not the formulas)  of the Type names  into column B of the Book Sheet. Based on this information, the sheet calculates basic quantities, and you can add more details in the later columns.
 
 ### Updating quantities
 
@@ -98,4 +92,5 @@ In the book Sheets you can add more information for the Spaces, Interior Walls, 
 	- (Ctrl A) marks everything
 	- (Delete) deletes all the data
 	- Click in column A1 and insert the data with (Ctrl V) 
-5. Check in the Sheet Help Unique if anything changed. Update accordingly.
+5. Check in the book sheets in column A and B if new types were added, if yes proceed to 6.
+6. Copy the values from column B and insert the values in column A (insert values, not formulas!)
