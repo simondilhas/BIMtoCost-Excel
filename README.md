@@ -61,7 +61,9 @@ The abstractBIM tool automatically transforms any architectural BIM IFC file wit
 - Cost Calculation: Integrates quantities, qualities, and unit prices for cost estimation.
 - Roombook: Aids in specifying room-specific qualities such as flooring.
 - Wallbook: Facilitates the specification of wall-related qualities based on wall relationships between two rooms.
-- Element Books: Offer detailed specifications for various elements.
+- Door Books: Offer detailed specifications for doors.
+- Window Books: Offer detailed specifications for windows.
+- SimpleBIM Wall Enrichment: Aggregates the data to bring it back to the IFC file for visualization using SimpleBIM.
 - List: Contains supplementary pick lists.
 
 ### General Workflow
@@ -80,6 +82,15 @@ The Cost Calculation sheet is the central workspace, linking all other sheets.
 ### Sheet "Roombook", "Wallbook", "Facadebook", "Windowbook" and "Doorbook"
 
 In the book Sheets you can add more information for the Spaces, Interior Walls, ExteriorCoverings. The principle is always the same. Copy the unique and insert the values (not the formulas)  of the Type names  into column B of the Book Sheet. Based on this information, the sheet calculates basic quantities, and you can add more details in the later columns.
+
+### Sheet "SimpleBIM Wall Enrichment"
+1. Copy column A with the GUID and B with the description 
+2. Insert the values (not the references) into the SimpleBIM Template "SimpleBIM Enrichment Template.xlsx" in Sheet "Enrichment Walls", cell C7
+3. Open the corresponding abstractBIM file with the template in SimpleBIM
+4. voila, the abstractBIM IFC is enriched and you can visualize your calculation data.
+
+### Sheet: List
+Add values for picklists in the different books.
 
 ### Updating quantities
 
